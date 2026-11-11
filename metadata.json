@@ -1,0 +1,6 @@
+{
+  "name": "Forever & Always — A Romantic Love Letter",
+  "description": "A breathtaking, interactive romantic website and digital love letter crafted for your girlfriend with music, personalized memories, live anniversary counter, and celestial surprises.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

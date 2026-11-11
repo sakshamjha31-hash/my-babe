@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #4c0519;
+    background-color: #faf6f0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: #fbcfe8;
+    color: #831843;
+  }
+}
+
+.font-cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Delicate romantic glowing animations */
+@keyframes romantic-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 12px rgba(225, 29, 72, 0.4));
+  }
+  50% {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 24px rgba(244, 63, 94, 0.7));
+  }
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes sparkle-twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.animate-romantic-pulse {
+  animation: romantic-pulse 2.8s ease-in-out infinite;
+}
+
+.animate-gentle-float {
+  animation: gentle-float 4.5s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle-twinkle 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf6f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777;
+}
